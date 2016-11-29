@@ -30,7 +30,7 @@ ENV RCVWND 2048
 
 EXPOSE $LISTEN_PORT/udp
 
-CMD client_linux_amd64 -l $LISTEN_ADDR:$LISTEN_PORT \
+CMD server_linux_amd64 -l $LISTEN_ADDR:$LISTEN_PORT \
                        -t $TARGET_ADDR:$TARGET_PORT \
                        --key $KEY \
                        --crypt $CRYPT \
