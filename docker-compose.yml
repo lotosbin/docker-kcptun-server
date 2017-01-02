@@ -1,0 +1,9 @@
+version: '2'
+services:
+  kcptun-server:
+    image: lotosbin/docker-kcptun-server
+    environment:
+      - TARGET_ADDR=xxx.xxx.xxx.xxx
+    ports:
+      - "31080:31080/udp"
+    restart: always
